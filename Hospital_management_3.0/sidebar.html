@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Navigation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-indigo-600 text-white flex flex-col min-h-screen">
+    <div class="p-4">
+      <h2 class="text-xl font-bold text-center">TechMed</h2>
+      <p class="text-sm text-center mt-1">Navigation Menu</p>
+    </div>
+    <nav class="mt-6">
+      <ul class="space-y-2">
+        <li>
+          <a href="#patient-management" class="block py-2 px-4 hover:bg-indigo-700 rounded-md">
+            Patient Management
+          </a>
+        </li>
+        <li>
+          <a href="#appointment-scheduling" class="block py-2 px-4 hover:bg-indigo-700 rounded-md">
+            Appointment Scheduling System
+          </a>
+        </li>
+        <li>
+          <a href="#billing-insurance" class="block py-2 px-4 hover:bg-indigo-700 rounded-md">
+            Billing and Insurance System
+          </a>
+        </li>
+        <li>
+          <a href="#inventory-management" class="block py-2 px-4 hover:bg-indigo-700 rounded-md">
+            Inventory Management System
+          </a>
+        </li>
+        <li>
+          <a href="#staff-management" class="block py-2 px-4 hover:bg-indigo-700 rounded-md">
+            Staff Management System
+          </a>
+        </li>
+        <li>
+          <a href="#reporting-analytics" class="block py-2 px-4 hover:bg-indigo-700 rounded-md">
+            Report and Analysis
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <footer class="mt-auto p-4 text-center">
+      <p class="text-xs">&copy; 2024 TechMed. All Rights Reserved.</p>
+    </footer>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6">
+    <!-- Patient Management Section -->
+    <section id="patient-management" class="bg-white shadow-md p-6 rounded-md mb-6">
+      <h2 class="text-lg font-semibold mb-4">Patient Management</h2>
+      <p>Manage patient records, medical histories, and other relevant information.</p>
+    </section>
+
+    <!-- Appointment Scheduling Section -->
+    <section id="appointment-scheduling" class="bg-white shadow-md p-6 rounded-md mb-6">
+      <h2 class="text-lg font-semibold mb-4">Appointment Scheduling System</h2>
+      <p>Schedule and manage appointments with ease.</p>
+    </section>
+
+    <!-- Billing and Insurance Section -->
+    <section id="billing-insurance" class="bg-white shadow-md p-6 rounded-md mb-6">
+      <h2 class="text-lg font-semibold mb-4">Billing and Insurance System</h2>
+      <p>Handle billing and insurance processes efficiently.</p>
+    </section>
+
+    <!-- Inventory Management Section -->
+    <section id="inventory-management" class="bg-white shadow-md p-6 rounded-md mb-6">
+      <h2 class="text-lg font-semibold mb-4">Inventory Management System</h2>
+      <p>Track and manage inventory levels and supplies.</p>
+    </section>
+
+    <!-- Staff Management Section -->
+    <section id="staff-management" class="bg-white shadow-md p-6 rounded-md mb-6">
+      <h2 class="text-lg font-semibold mb-4">Staff Management System</h2>
+      <p>Manage employee schedules, roles, and permissions.</p>
+    </section>
+
+    <!-- Reporting and Analytics Section -->
+    <section id="reporting-analytics" class="bg-white shadow-md p-6 rounded-md">
+      <h2 class="text-lg font-semibold mb-4">Report and Analysis</h2>
+      <p>Generate customizable reports and gain insights through data analysis.</p>
+    </section>
+  </main>
+</body>
+</html>

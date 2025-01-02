@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.remove('hidden');
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add('hidden');
+    }
+  </script>
+  <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.remove('hidden');
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add('hidden');
+    }
+
+    function deleteItem(itemId) {
+      const itemRow = document.getElementById(itemId);
+      itemRow.remove();
+    }
+
+    function editItem(itemId) {
+      const itemRow = document.getElementById(itemId);
+      const itemName = itemRow.querySelector('.item-name').innerText;
+      const itemDescription = itemRow.querySelector('.item-description').innerText;
+      const itemQuantity = itemRow.querySelector('.item-quantity').innerText;
+      const itemUnit = itemRow.querySelector('.item-unit').innerText;
+      const itemExpDate = itemRow.querySelector('.item-exp-date').innerText;
+
+      document.getElementById('edit-item-name').value = itemName;
+      document.getElementById('edit-item-description').value = itemDescription;
+      document.getElementById('edit-item-quantity').value = itemQuantity;
+      document.getElementById('edit-item-unit').value = itemUnit;
+      document.getElementById('edit-item-exp-date').value = itemExpDate;
+      document.getElementById('edit-item-id').value = itemId;
+      openModal('editModal');
+    }
+
+    function updateItem() {
+      const itemId = document.getElementById('edit-item-id').value;
+      const itemRow = document.getElementById(itemId);
+      itemRow.querySelector('.item-name').innerText = document.getElementById('edit-item-name').value;
+      itemRow.querySelector('.item-description').innerText = document.getElementById('edit-item-description').value;
+      itemRow.querySelector('.item-quantity').innerText = document.getElementById('edit-item-quantity').value;
+      itemRow.querySelector('.item-unit').innerText = document.getElementById('edit-item-unit').value;
+      itemRow.querySelector('.item-exp-date').innerText = document.getElementById('edit-item-exp-date').value;
+      closeModal('editModal');
+    }
+  </script>
+
+</head>
+<body class="bg-gray-100 min-h-screen flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-indigo-600 text-white flex flex-col min-h-screen">
+      <div class="p-4">
+        <h2 class="text-xl font-bold text-center">TechMed</h2>
+        <p class="text-sm text-center mt-1">Navigation Menu</p>
+      </div>
+      <nav class="mt-6">
+        <ul class="space-y-2">
+          <li>
+              <a href="./patient management.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">🏠 Patient Management</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./Appointment shedule.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">🗂️  Appointment sheduling</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./billing and insurance.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">💳  Billing & Insurence</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./inventory management.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2 bg-blue-200">
+                  <span class="ml-3">📦Invntory Management</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./staff management.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">👨‍⚕️ Staff Management</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./reporting and analaysis.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">📅 Report & analysis</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./settings.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                <span class="ml-3">⚙️ Settings</span> 
+              </a>
+            </li>
+            <li>
+              <a href="./index.html" class="flex items-center text-White-700 rounded-md hover:bg-red-700 p-2 mt-auto">
+                <span class="ml-3">🚪 Log Out</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
+      <footer class="mt-auto p-4 text-center">
+        <p class="text-xs">&copy; 2024 TechMed. All Rights Reserved.</p>
+      </footer>
+    </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 p-6">
+    <header class="bg-indigo-600 text-white p-4 shadow-md">
+      <h1 class="text-xl font-bold text-center">Inventory Management System</h1>
+    </header>
+
+    <main class="mt-6">
+
+      <!-- Add New Inventory Item Section -->
+      <div id="add-item" class="bg-white shadow-md p-4 rounded-md mb-6">
+        <h2 class="text-lg font-semibold mb-4">Add New Inventory Item</h2>
+        <form class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <input 
+            type="text" 
+            placeholder="Item Name" 
+            class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <textarea 
+            placeholder="Description" 
+            class="col-span-2 border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+          <input 
+            type="number" 
+            placeholder="Quantity" 
+            class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <input 
+            type="text" 
+            placeholder="Unit of Measure" 
+            class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <input 
+            type="date" 
+            placeholder="Expiration Date" 
+            class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <button 
+            type="submit" 
+            class="col-span-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+            Add Item
+          </button>
+        </form>
+      </div>
+
+      <!-- Update Item Quantity Section -->
+      <div id="update-item" class="bg-white shadow-md p-4 rounded-md mb-6">
+        <h2 class="text-lg font-semibold mb-4 ">Update Item Quantity</h2>
+        <form class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <input 
+            type="text" 
+            placeholder="Item Name or ID" 
+            class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <input 
+            type="number" 
+            placeholder="New Quantity" 
+            class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <button 
+            type="submit" 
+            class="col-span-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+            Update Quantity
+          </button>
+        </form>
+      </div>
+
+      <!-- Check Item Availability Section -->
+      <div id="check-availability" class="bg-white shadow-md p-4 rounded-md mb-6">
+        <h2 class="text-lg font-semibold mb-4">Check Item Availability</h2>
+        <form class="grid grid-cols-1 gap-4">
+          <input 
+            type="text" 
+            placeholder="Item Name or ID" 
+            class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <button 
+            type="submit" 
+            class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+            Check Availability
+          </button>
+        </form>
+      </div>
+
+      <!-- Demo Inventory List -->
+      <div id="inventory-list" class="bg-white shadow-md p-4 rounded-md mb-6">
+        <h2 class="text-lg font-semibold mb-4">Inventory List</h2>
+        <table class="min-w-full table-auto border-collapse">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 border">Item Name</th>
+              <th class="px-4 py-2 border">Description</th>
+              <th class="px-4 py-2 border">Quantity</th>
+              <th class="px-4 py-2 border">Unit</th>
+              <th class="px-4 py-2 border">Expiration Date</th>
+              <th class="px-4 py-2 border">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="item-1">
+              <td class="item-name px-4 py-2 border">Aspirin</td>
+              <td class="item-description px-4 py-2 border">Pain reliever</td>
+              <td class="item-quantity px-4 py-2 border">100</td>
+              <td class="item-unit px-4 py-2 border">Tablets</td>
+              <td class="item-exp-date px-4 py-2 border">2025-01-01</td>
+              <td class="px-4 py-2 border">
+                <button onclick="editItem('item-1')" class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition">Edit</button>
+                <button onclick="deleteItem('item-1')" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition ml-2">Delete</button>
+              </td>
+            </tr>
+            <tr id="item-2">
+              <td class="item-name px-4 py-2 border">Ibuprofen</td>
+              <td class="item-description px-4 py-2 border">Anti-inflammatory</td>
+              <td class="item-quantity px-4 py-2 border">200</td>
+              <td class="item-unit px-4 py-2 border">Capsules</td>
+              <td class="item-exp-date px-4 py-2 border">2024-12-25</td>
+              <td class="px-4 py-2 border">
+                <button onclick="editItem('item-2')" class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition">Edit</button>
+                <button onclick="deleteItem('item-2')" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition ml-2">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Modal for Editing Item -->
+      <div id="editModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex items-center justify-center">
+        <div class="bg-white p-6 rounded-md shadow-md w-1/3">
+          <h3 class="text-lg font-bold mb-4">Edit Inventory Item</h3>
+          <form>
+            <input id="edit-item-id" type="hidden">
+            <input 
+              id="edit-item-name" 
+              type="text" 
+              placeholder="Item Name" 
+              class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 mb-4 w-full">
+            <textarea 
+              id="edit-item-description" 
+              placeholder="Description" 
+              class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 mb-4 w-full"></textarea>
+            <input 
+              id="edit-item-quantity" 
+              type="number" 
+              placeholder="Quantity" 
+              class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 mb-4 w-full">
+            <input 
+              id="edit-item-unit" 
+              type="text" 
+              placeholder="Unit of Measure" 
+              class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 mb-4 w-full">
+            <input 
+              id="edit-item-exp-date" 
+              type="date" 
+              placeholder="Expiration Date" 
+              class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 mb-4 w-full">
+            <div class="flex justify-end">
+              <button type="button" onclick="closeModal('editModal')" class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition mr-2">Close</button>
+              <button type="button" onclick="updateItem()" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Low Stock and Expiration Alerts Section -->
+      <div id="alerts" class="bg-white shadow-md p-4 rounded-md mb-6">
+        <h2 class="text-lg font-semibold mb-4">Low Stock & Expiration Alerts</h2>
+        <ul class="list-disc pl-6 text-red-600">
+          <li>Item X is low on stock (5 units remaining).</li>
+          <li>Item Y is approaching expiration (3 days left).</li>
+        </ul>
+      </div>
+
+      <!-- Modal for Barcode Scanning -->
+      <div id="barcodeModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex items-center justify-center">
+        <div class="bg-white p-6 rounded-md shadow-md w-1/3">
+          <h3 class="text-lg font-bold mb-4">Scan Barcode</h3>
+          <p>Use your scanner or enter the barcode manually below:</p>
+          <input 
+            type="text" 
+            placeholder="Enter Barcode" 
+            class="border border-gray-300 px-4 py-2 rounded-md w-full mt-4 focus:outline-none focus:ring-2 focus:ring-green-400">
+          <div class="flex justify-end mt-4">
+            <button 
+              class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition mr-2" 
+              onclick="closeModal('barcodeModal')">
+              Close
+            </button>
+            <button 
+              class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

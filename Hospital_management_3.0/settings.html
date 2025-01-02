@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-indigo-600 text-white flex flex-col min-h-screen">
+      <div class="p-4">
+        <h2 class="text-xl font-bold text-center">TechMed</h2>
+        <p class="text-sm text-center mt-1">Navigation Menu</p>
+      </div>
+      <nav class="mt-6">
+        <ul class="space-y-2">
+          <li>
+              <a href="./patient management.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">🏠 Patient Management</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./Appointment shedule.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">🗂️  Appointment sheduling</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./billing and insurance.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">💳  Billing & Insurence</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./inventory management.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">📦Invntory Management</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./staff management.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">👨‍⚕️ Staff Management</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./reporting and analaysis.html" class="flex items-center text-White-700 rounded-md hover:bg-gray-900 p-2">
+                  <span class="ml-3">📅 Report & analysis</span> 
+                </a>
+          </li>
+          <li>
+              <a href="./settings.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2 bg-blue-200">
+                <span class="ml-3">⚙️ Settings</span> 
+              </a>
+            </li>
+            <li>
+              <a href="./index.html" class="flex items-center text-White-700 rounded-md hover:bg-red-700 p-2 mt-auto">
+                <span class="ml-3">🚪 Log Out</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
+      <footer class="mt-auto p-4 text-center">
+        <p class="text-xs">&copy; 2024 TechMed. All Rights Reserved.</p>
+      </footer>
+    </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-8">
+      <button class="flex items-center bg-blue-100 text-blue-600 px-4 py-2 rounded-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Back
+      </button>
+      <h1 class="text-2xl font-bold text-gray-700">Settings</h1>
+      <p class="text-gray-500">Today's Date: <span class="font-medium">2024-02-28</span></p>
+    </div>
+
+    <!-- Settings Options -->
+    <div class="space-y-4">
+      <!-- Account Settings -->
+      <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
+        <a href="#" class="flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="p-3 bg-blue-100 rounded">
+              <span class="text-blue-500">🔧</span>
+            </div>
+            <div class="ml-4">
+              <h2 class="font-medium text-gray-700">Account Settings</h2>
+              <p class="text-sm text-gray-500">Edit your Account Details & Change Password</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- View Account Details -->
+      <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
+        <a href="#" class="flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="p-3 bg-blue-100 rounded">
+              <span class="text-blue-500">👁️</span>
+            </div>
+            <div class="ml-4">
+              <h2 class="font-medium text-gray-700">View Account Details</h2>
+              <p class="text-sm text-gray-500">View Personal Information About Your Account</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Delete Account -->
+      <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
+        <a href="#" class="flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="p-3 bg-red-100 rounded">
+              <span class="text-red-500">🗑️</span>
+            </div>
+            <div class="ml-4">
+              <h2 class="font-medium text-gray-700">Delete Account</h2>
+              <p class="text-sm text-gray-500">Will Permanently Remove your Account</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
