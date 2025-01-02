@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/eafe33d1e2.js" crossorigin="anonymous"></script>
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwindConfig.js"></script>
+    <title>Ishwarodi  Trading</title>
+</head>
+
+<body>
+
+    <!-- navbar section start  -->
+    <nav class="bg-white border-b">
+        <div class="container mx-auto py-2 md:py-0 flex items-center justify-between relative">
+            <div class="ml-4 md:ml-0">
+                <a href="/">
+                    <h1 class="text-4xl md:text-5xl font-semibold uppercase text-primary">Ishwarodi </h1>
+                    <p
+                        class="md:text-lg font-medium text-secondary uppercase tracking-[8px] md:tracking-[11px] text-center">
+                        Trading</p>
+                </a>
+            </div>
+            <button id="navOpen"
+                class="text-3xl md:hidden text-secondary ease-in-out duration-500 delay-300 mr-4 md:mr-0">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="navClose"
+                class="text-3xl hidden text-secondary ease-in-out duration-500 delay-300 mr-4 md:mr-0">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="navMenu"
+                class="md:flex items-center bg-white border-t text-primary md:border-t gap-8 font-semibold absolute  md:relative w-full md:w-fit text-black px-4 md:px-0 2xl:text-xl top-full h-0 md:h-fit overflow-hidden invisible md:overflow-visible md:visible z-50">
+                <li class="text-xl py-4 md:py-8"><a href="/">Home</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./about.html">About</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./products.html">Products</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <button
+                    class="text-white font-medium bg-primary px-6 py-3 rounded hover:bg-secondary ease-in-out duration-500">Get
+                    Started</button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end  -->
+
+
+    <!-- hero section start  -->
+    <!-- <div class="bg-cover h-[90vh] flex items-center justify-center"
+        style="background-image: linear-gradient(rgba(7, 51, 22, .5), rgba(7, 51, 22, .5)), url('./assets/cover.jpg');">
+        <div>
+            <h1 class="text-white font-black uppercase text-7xl text-center leading-normal">Ishwardi TRADING</h1>
+            <div class="flex justify-center mt-16">
+                <button
+                    class="text-white font-medium bg-secondary px-12 py-4 rounded-full hover:bg-primary ease-in-out duration-500">Learn
+                    More</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Harvesting Flavor, Nurturing Tradition - IshwardiTrading, Where Quality Meets Taste -->
+    <section class="hero-slider">
+        <div class="hero-slider-item hero-slide">
+            <img src="./assets/cover.jpg" alt="">
+            <div class="hero-slider-content">
+                <h1><span>Ishwardi  Trading, Nourishing</span> Lives with Premium Goods.</h1>
+                <p>Welcome to Ishwardi  Trading, where the journey from field to fork is a celebration of culinary
+                    excellence. As purveyors of premium food essentials, we take pride in sourcing and delivering the
+                    finest rice, dal, sugar, and potatoes to your table.</p>
+                <a href=""
+                    class="text-white font-medium bg-secondary px-12 py-4 rounded-full hover:bg-primary ease-in-out duration-500">Learn
+                    More</a>
+            </div>
+        </div>
+        <div class="hero-slider-item hero-slide">
+            <img src="./assets/sugar-bg.jpg" alt="">
+            <div class="hero-slider-content">
+                <h1><span>Harvesting Flavor</span> Where Quality Meets Taste</h1>
+                <p>We understand the significance of these staples in your daily life and the traditions they carry.
+                    That's why Ishwardi  Trading is dedicated to offering you not just products but experiences. </p>
+                <a href=""
+                    class="text-white font-medium bg-secondary px-12 py-4 rounded-full hover:bg-primary ease-in-out duration-500">Learn
+                    More</a>
+            </div>
+        </div>
+        <div class="hero-slider-item hero-slide">
+            <img src="./assets/banner3.jpg" alt="">
+            <div class="hero-slider-content">
+                <h1><span>Discover Perfection</span> with Ishwardi's Finest Selection</h1>
+                <p>Choose Ishwardi  Trading for a culinary journey that transcends ordinary, where every bite is a
+                    testament to our unwavering commitment to quality beyond measure. </p>
+                <a href=""
+                    class="text-white font-medium bg-secondary px-12 py-4 rounded-full hover:bg-primary ease-in-out duration-500">Learn
+                    More</a>
+            </div>
+        </div>
+    </section>
+    <div style="text-align:center; display: none;">
+        <span class="sliderDot"></span>
+        <span class="sliderDot"></span>
+        <span class="sliderDot"></span>
+    </div>
+    <!-- hero section end  -->
+
+
+
+
+    <!-- mission vision section start  -->
+    <div class="container mx-auto my-20">
+        <div class="mx-4 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+            <div class="bg-primary rounded-2xl px-8 text-center py-32">
+                <i class="fa-regular fa-eye text-secondary text-7xl"></i>
+                <h1 class="text-white text-3xl font-medium mt-10">Our Vision</h1>
+                <p class="text-white font-light mt-4">Becoming industry benchmark leaders in the foodstuff trading
+                    sector aligning with the Bangladesh 2030 vision and extending beyond.</p>
+            </div>
+
+            <div class="bg-secondary rounded-2xl px-8 text-center py-32">
+                <i class="fa-solid fa-rocket text-primary text-7xl"></i>
+                <h1 class="text-primary text-3xl font-medium mt-10">Our Mission</h1>
+                <p class="text-primary font-light mt-4">Achieving the founders' vision by sourcing top-quality foodstuff
+                    to meet demands and expanding the food service industry, catering to wholesalers and retailers. This
+                    effort is aimed at generating favorable returns for owners, benefiting society, and supporting our
+                    employees.</p>
+            </div>
+
+            <div class="bg-primary rounded-2xl px-8 text-center py-32">
+                <i class="fa-solid fa-gem text-secondary text-7xl"></i>
+                <h1 class="text-white text-3xl font-medium mt-10">Our History</h1>
+                <p class="text-white font-light mt-4">Originating from its base in Dhaka, Bangladesh, the company was
+                    established and launched, initiating operations and expanding to emerge as one of the premier
+                    private enterprises in food import and trade within Bangladesh.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- mission vision section end -->
+
+
+    <!-- about section start  -->
+    <div class="container mx-auto my-32 hidden">
+        <div class="mx-4 md:mx-0 flex gap-16">
+            <div class="md:w-1/2">
+                <h1 class="text-5xl xl:text-7xl text-secondary font-semibold">About Us</h1>
+                <p class="mt-8 xl:mt-16 leading-9">Presently, the company efficiently conveys and disseminates food
+                    products
+                    across the entire Kingdom market utilizing an extensive fleet of well-equipped vehicles and a
+                    proficient sales team. This strategic approach has positioned the company as a frontrunner in the
+                    food industry. Engaging in the marketing and distribution of renowned brands, alongside its
+                    proprietary brands, has solidified its leadership in key Bangladeshi markets. The company's primary
+                    business operations are concentrated in the Central, Eastern, and Western regions, followed by other
+                    areas. Regarding suppliers, we maintain successful partnerships with leading international players
+                    in Europe, America, and Arab Mediterranean countries.</p>
+            </div>
+            <div class="md:w-1/2 about-bg py-64">
+
+            </div>
+        </div>
+    </div>
+    <!-- about section end  -->
+
+
+    <!-- about section start  -->
+    <div class="container mx-auto xl:my-32">
+        <div class="mx-4 md:mx-0 md:flex gap-16">
+            <div class="md:w-1/2">
+                <div class="flex items-center gap-6 relative">
+                    <div>
+                        <img class="rounded-md" src="./assets/about1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="my-6 rounded-md" src="./assets/about2.jpg" alt="">
+                        <img class="my-6 rounded-md" src="./assets/about3.jpg" alt="">
+                    </div>
+                    <img class="absolute h-28 w-28 md:h-52 md:w-52 bottom-12 left-24 md:bottom-16 md:left-44"
+                        src="./assets/organic.png" alt="">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h1 class="text-5xl xl:text-7xl text-secondary font-semibold">About Us</h1>
+                <h1 class="text-2xl xl:text-4xl text-primary font-semibold mt-4">Organic & Helathy Foods Provider</h1>
+                <p class="mt-8 xl:mt-10 leading-9">Presently, the company efficiently conveys and disseminates food
+                    products
+                    across the entire Kingdom market utilizing an extensive fleet of well-equipped vehicles and a
+                    proficient sales team. This strategic approach has positioned the company as a frontrunner in the
+                    food industry. Engaging in the marketing and distribution of renowned brands, alongside its
+                    proprietary brands, has solidified its leadership in key Bangladeshi markets. The company's primary
+                    business operations are concentrated in the Central, Eastern, and Western regions, followed by other
+                    areas. Regarding suppliers, we maintain successful partnerships with leading international players
+                    in Europe, America, and Arab Mediterranean countries.</p>
+            </div>
+        </div>
+    </div>
+    <!-- about section end -->
+
+
+
+    <!-- product ads section start  -->
+    <div class="product-bg h-[60vh]">
+        <div class="container mx-auto my-20">
+            <div class="mx-4 md:mx-0 flex items-center justify-center h-[60vh]">
+                <div>
+                    <h1 class="text-white font-black uppercase text-3xl text-center lg:text-5xl">WE ARE YOUR RIGHT
+                        CHOICE !</h1>
+                    <p class="uppercase tracking-widest text-center text-white mt-6">browse our products</p>
+                    <div class="flex justify-center mt-16">
+                        <button
+                            class="text-white font-medium bg-secondary px-12 py-4 rounded-full hover:bg-primary ease-in-out duration-500">Our
+                            Products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product ads section end  -->
+
+
+    <!-- photo gallery section start  -->
+    <div class="container mx-auto my-20">
+        <div class="mx-4 md:mx-0">
+            <h1 class="text-secondary font-semibold text-4xl">Insite Photo Gallery</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+                <div class="relative group">
+                    <img class="h-58 w-full md:h-64 xl:h-80 rounded-xl" src="./assets/gallery2.jpg" alt="">
+                    <img class="rounded-xl absolute top-1/2 left-1/2 h-0 w-0 ease-in-out duration-500 group-hover:w-full group-hover:h-58 group-hover:md:h-64 group-hover:xl:h-80 group-hover:top-0 group-hover:bottom-0 group-hover:left-0 group-hover:right-0"
+                        src="./assets/gallery1.jpg" alt="">
+                </div>
+                <div class="relative group">
+                    <img class="h-58 w-full md:h-64 xl:h-80 rounded-xl" src="./assets/gallery3.jpg" alt="">
+                    <img class="rounded-xl absolute top-1/2 left-1/2 h-0 w-0 ease-in-out duration-500 group-hover:w-full group-hover:h-58 group-hover:md:h-64 group-hover:xl:h-80 group-hover:top-0 group-hover:bottom-0 group-hover:left-0 group-hover:right-0"
+                        src="./assets/gallery5.jpg" alt="">
+                </div>
+                <div class="relative group">
+                    <img class="h-58 w-full md:h-64 xl:h-80 rounded-xl" src="./assets/gallery6.jpg" alt="">
+                    <img class="rounded-xl absolute top-1/2 left-1/2 h-0 w-0 ease-in-out duration-500 group-hover:w-full group-hover:h-58 group-hover:md:h-64 group-hover:xl:h-80 group-hover:top-0 group-hover:bottom-0 group-hover:left-0 group-hover:right-0"
+                        src="./assets/gallery4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photo gallery section end  -->
+
+
+    <!-- customer review section start  -->
+    <div class="container mx-auto my-20 xl:mt-32">
+        <div class="mx-4 md:mx-0">
+            <h1 class="text-2xl xl:text-4xl text-secondary font-semibold mt-4 leading-10">Valuable Customer’s Feedback
+                (Reviews)</h1>
+            <div class="carousel-wrapper">
+                <i id="left" class="fa-solid fa-angle-left arrow"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="border rounded-2xl flex justify-between p-6 gap-5 mt-10">
+                            <div class="w-2/3">
+                                <p class="xl:leading-9 line-clamp-3 lg:line-clamp-4">I have had the pleasure of doing
+                                    business with Ishwardi 
+                                    Trading, and I
+                                    must say that their commitment to quality and customer satisfaction is truly
+                                    commendable.</p>
+                                <div class="flex items-center gap-2 mt-5">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                            </div>
+                            <div class="w-1/3">
+                                <img class="rounded-md w-full h-fit" src="./assets/review.jpg" alt="review">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="border rounded-2xl flex justify-between p-6 gap-5 mt-10">
+                            <div class="w-2/3">
+                                <p class="xl:leading-9 line-clamp-3 lg:line-clamp-4">As the
+                                    owner of a food retail business, I rely on suppliers who can consistently deliver
+                                    top-notch
+                                    products, and Ishwardi Trading has exceeded my expectations</p>
+                                <div class="flex items-center gap-2 mt-5">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                            </div>
+                            <div class="w-1/3">
+                                <img class="rounded-md w-full h-fit" src="./assets/review2.webp" alt="review">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="border rounded-2xl flex justify-between p-6 gap-5 mt-10">
+                            <div class="w-2/3">
+                                <p class="xl:leading-9 line-clamp-3 lg:line-clamp-4">Ishwardi Trading takes pride in
+                                    sourcing the finest pulses, and it shows in the quality of their dal. The grains
+                                    were uniform, clean, and free from any impurities, reflecting a commitment to purity
+                                    that sets Ishwardi Trading apart</p>
+                                <div class="flex items-center gap-2 mt-5">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                            </div>
+                            <div class="w-1/3">
+                                <img class="rounded-md w-full h-fit" src="./assets/gallery3.jpg" alt="review">
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right arrow"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- customer review section end  -->
+
+
+    <!-- Slider Code -->
+    <div class="container mx-auto my-20">
+        <div class="mx-4 md:mx-0">
+            <h1 class="text-center text-primary text-5xl xl:text-6xl font-semibold">Our Client</h1>
+            <div class="wrapper my-16">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="./assets/Batman.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Spiderman.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Black-Adam.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Iron-Man.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/SuperMan.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Captain-America.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Black-Panther.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Aquaman.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Hulk.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Flash.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Thor.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Ant-Man.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Wonder-Woman.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/Green-Lantern.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section start  -->
+    <div class='footer-bg bg-primary'>
+        <div class='container mx-auto'>
+            <div class='grid grid-cols-1 md:grid-cols-3 gap-10 py-12 mx-5 md:mx-0'>
+                <div class='flex md:block flex-col justify-center items-center'>
+                    <span class='uppercase text-white flex items-center font-[500] gap-2'>
+                        <a href="/">
+                            <h1 class="text-4xl md:text-5xl font-semibold uppercase text-secondary">Ishwardi</h1>
+                            <p
+                                class="md:text-lg font-medium text-white uppercase tracking-[8px] md:tracking-[11px] text-center">
+                                Trading</p>
+                        </a>
+                    </span>
+                    <p class='text-white my-5 text-center md:text-start'>Presently, the company efficiently conveys and
+                        disseminates food products across the entire Kingdom market utilizing an extensive fleet of
+                        well-equipped vehicles and a proficient sales team. </p>
+
+                    <span class="flex text-white items-center gap-4 mt-2">
+                        <i class="fa-regular fa-envelope-open"></i>
+                        <p>Ishwarditradingcontact@gmail.com</p>
+                    </span>
+                    <span class="flex text-white items-center gap-4 mt-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>01824-554733</p>
+                    </span>
+                    <span class="flex text-white items-center gap-4 mt-2 mb-8">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>02-48956074 (Office)</p>
+                    </span>
+                </div>
+
+                <div class='md:flex justify-between text-center md:text-start'>
+                    <div class='w-full md:w-1/2'>
+                        <h2 class='text-white text-xl font-medium'>Useful links</h2>
+                        <ul class='text-white mt-5'>
+                            <li><a class='hover:text-secondary' href=''>About</a></li>
+                            <li><a class='hover:text-secondary' href='./products.html'>Products</a></li>
+                            <li><a class='hover:text-secondary' href='./contact.html'>Contact</a></li>
+                            <li><a class='hover:text-secondary' href=''>Our Clients</a></li>
+                        </ul>
+                    </div>
+                    <div class='w-full md:w-1/2 mt-5 md:mt-0'>
+                        <h2 class='text-white text-xl font-medium'>Social</h2>
+                        <ul class='text-white mt-5'>
+                            <li><a class='hover:text-secondary' href=''>Facebook</a></li>
+                            <li><a class='hover:text-secondary' href=''>Instagram</a></li>
+                            <li><a class='hover:text-secondary' href=''>Twitter</a></li>
+                            <li><a class='hover:text-secondary' href=''>Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class='text-white text-xl font-medium text-center md:text-start'>Subscribe Our Newsletter</h2>
+
+                    <div class="flex items-center gap-2 mt-5">
+                        <input class="border-none outline-none w-full rounded-md p-2.5 placeholder:text-sm" type="text"
+                            placeholder="Enter your email">
+                        <button
+                            class="px-6 py-3 rounded-md text-white bg-secondary uppercase font-medium text-sm hover:bg-primary border border-primary hover:border-secondary ease-in duration-500">Subscribe</button>
+                    </div>
+
+                    <div class="mt-5">
+                        <span class="text-white flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <p>Flat # 5D, House # 06 (Naam Bhaban) Road #02, Banani, Dhaka-1213</p>
+                        </span>
+                    </div>
+                    <span class='flex items-center gap-2 mt-8'>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-facebook-f text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#3c599f] border-none"></i>
+                        </a>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-twitter text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#32CCFE] border-none"></i>
+                        </a>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-linkedin-in text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#0085AE] border-none"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class='py-5 border-t border-t-white md:flex items-center justify-between'>
+                <p id="copyright" class='text-white text-center text-sm'></p>
+                <p class='text-white text-sm text-center md:text-end'>Developed By: <a class="fw-semi-bold" href="https://www.facebook.com/talha.rejuanrafi">musfiq611891</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end  -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

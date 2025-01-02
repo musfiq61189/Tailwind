@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/eafe33d1e2.js" crossorigin="anonymous"></script>
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwindConfig.js"></script>
+    <title>Utshob Trading</title>
+</head>
+
+<body>
+    <!-- navbar section start  -->
+    <nav class="bg-white border-b">
+        <div class="container mx-auto py-2 md:py-0 flex items-center justify-between relative">
+            <div class="ml-4 md:ml-0">
+                <a href="/">
+                    <h1 class="text-4xl md:text-5xl font-semibold uppercase text-primary">Utshob</h1>
+                    <p
+                        class="md:text-lg font-medium text-secondary uppercase tracking-[8px] md:tracking-[11px] text-center">
+                        Trading</p>
+                </a>
+            </div>
+            <button id="navOpen"
+                class="text-3xl md:hidden text-secondary ease-in-out duration-500 delay-300 mr-4 md:mr-0">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="navClose"
+                class="text-3xl hidden text-secondary ease-in-out duration-500 delay-300 mr-4 md:mr-0">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="navMenu"
+                class="md:flex items-center bg-white border-t text-primary md:border-t gap-8 font-semibold absolute  md:relative w-full md:w-fit text-black px-4 md:px-0 2xl:text-xl top-full h-0 md:h-fit overflow-hidden invisible md:overflow-visible md:visible z-50">
+                <li class="text-xl py-4 md:py-8"><a href="/">Home</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./about.html">About</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./products.html">Products</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <button
+                    class="text-white font-medium bg-primary px-6 py-3 rounded hover:bg-secondary ease-in-out duration-500">Get
+                    Started</button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end  -->
+
+
+
+    <!-- header title  -->
+    <div class="title-bg p-14 md:p-20 flex flex-col items-center">
+        <h1 class="text-4xl md:text-6xl font-medium text-white uppercase">Contact Us</h1>
+        <span class="text-white felx items-center justify-center gap-4 md:text-xl mt-4">
+            <a href="/">Home</a>
+            <i class="fa-solid fa-angles-right"></i>
+            <a href="">Contact</a>
+        </span>
+    </div>
+
+    <!-- contact  -->
+    <section class="container mx-auto my-10 md:my-20">
+        <div class="mx-4 md:mx-0 grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div>
+                <img src="./assets/contact.png" alt="contact">
+            </div>
+            <div>
+                <h1 class="text-secondary text-3xl xl:text-5xl font-[500]">Let's Get In <span
+                        class="text-primary">Touch</span></h1>
+                <form>
+                    <input class="placeholder:text-dark placeholder:text-sm outline-none border-b w-full p-2 mt-10"
+                        placeholder="Enter Your Name" type="text">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input class="placeholder:text-dark placeholder:text-sm outline-none border-b w-full p-2 mt-10"
+                            placeholder="Phone Number" type="text">
+                        <input class="placeholder:text-dark placeholder:text-sm outline-none border-b w-full p-2 mt-10"
+                            placeholder="Email Address" type="email">
+                    </div>
+
+                    <textarea class="placeholder:text-dark placeholder:text-sm outline-none border-b w-full p-2 mt-10"
+                        name="" placeholder="Write Here Something" id="" cols="30" rows="3"></textarea>
+
+                    <button
+                        class="px-8 py-2 xl:px-12 py-4 bg-primary hover:bg-secondary ease-in duration-500 text-white rounded-full hover:opacity-90 mt-10">Send
+                        Your Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section start  -->
+    <div class='footer-bg bg-primary'>
+        <div class='container mx-auto'>
+            <div class='grid grid-cols-1 md:grid-cols-3 gap-10 py-12 mx-5 md:mx-0'>
+                <div class='flex md:block flex-col justify-center items-center'>
+                    <span class='uppercase text-white flex items-center font-[500] gap-2'>
+                        <a href="/">
+                            <h1 class="text-4xl md:text-5xl font-semibold uppercase text-secondary">Utshob</h1>
+                            <p
+                                class="md:text-lg font-medium text-white uppercase tracking-[8px] md:tracking-[11px] text-center">
+                                Trading</p>
+                        </a>
+                    </span>
+                    <p class='text-white my-5 text-center md:text-start'>Presently, the company efficiently conveys and
+                        disseminates food products across the entire Kingdom market utilizing an extensive fleet of
+                        well-equipped vehicles and a proficient sales team. </p>
+
+                    <span class="flex text-white items-center gap-4 mt-2">
+                        <i class="fa-regular fa-envelope-open"></i>
+                        <p>utshobtradingcontact@gmail.com</p>
+                    </span>
+                    <span class="flex text-white items-center gap-4 mt-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>01824-554733</p>
+                    </span>
+                    <span class="flex text-white items-center gap-4 mt-2 mb-8">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>02-48956074 (Office)</p>
+                    </span>
+                </div>
+
+                <div class='md:flex justify-between text-center md:text-start'>
+                    <div class='w-full md:w-1/2'>
+                        <h2 class='text-white text-xl font-medium'>Useful links</h2>
+                        <ul class='text-white mt-5'>
+                            <li><a class='hover:text-secondary' href=''>About</a></li>
+                            <li><a class='hover:text-secondary' href='./products.html'>Products</a></li>
+                            <li><a class='hover:text-secondary' href='./contact.html'>Contact</a></li>
+                            <li><a class='hover:text-secondary' href=''>Our Clients</a></li>
+                        </ul>
+                    </div>
+                    <div class='w-full md:w-1/2 mt-5 md:mt-0'>
+                        <h2 class='text-white text-xl font-medium'>Social</h2>
+                        <ul class='text-white mt-5'>
+                            <li><a class='hover:text-secondary' href=''>Facebook</a></li>
+                            <li><a class='hover:text-secondary' href=''>Instagram</a></li>
+                            <li><a class='hover:text-secondary' href=''>Twitter</a></li>
+                            <li><a class='hover:text-secondary' href=''>Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class='text-white text-xl font-medium text-center md:text-start'>Subscribe Our Newsletter</h2>
+
+                    <div class="flex items-center gap-2 mt-5">
+                        <input class="border-none outline-none w-full rounded-md p-2.5 placeholder:text-sm" type="text"
+                            placeholder="Enter your email">
+                        <button
+                            class="px-6 py-3 rounded-md text-white bg-secondary uppercase font-medium text-sm hover:bg-primary border border-primary hover:border-secondary ease-in duration-500">Subscribe</button>
+                    </div>
+
+                    <div class="mt-5">
+                        <span class="text-white flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <p>Flat # 5D, House # 06 (Naam Bhaban) Road #02, Banani, Dhaka-1213</p>
+                        </span>
+                    </div>
+                    <span class='flex items-center gap-2 mt-8'>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-facebook-f text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#3c599f] border-none"></i>
+                        </a>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-twitter text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#32CCFE] border-none"></i>
+                        </a>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-linkedin-in text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#0085AE] border-none"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class='py-5 border-t border-t-white md:flex items-center justify-between'>
+                <p id="copyright" class='text-white text-center text-sm'></p>
+                <p class='text-white text-sm text-center md:text-end'>Developed By: <a class="fw-semi-bold" href="https://www.facebook.com/talha.rejuanrafi">musfiq611891</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end  -->
+
+    <!-- js file  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/eafe33d1e2.js" crossorigin="anonymous"></script>
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwindConfig.js"></script>
+    <title>Utshob Trading</title>
+</head>
+
+<body>
+
+    <!-- navbar section start  -->
+    <nav class="bg-white border-b">
+        <div class="container mx-auto py-2 md:py-0 flex items-center justify-between relative">
+            <div class="ml-4 md:ml-0">
+                <a href="/">
+                    <h1 class="text-4xl md:text-5xl font-semibold uppercase text-primary">Utshob</h1>
+                    <p
+                        class="md:text-lg font-medium text-secondary uppercase tracking-[8px] md:tracking-[11px] text-center">
+                        Trading</p>
+                </a>
+            </div>
+            <button id="navOpen"
+                class="text-3xl md:hidden text-secondary ease-in-out duration-500 delay-300 mr-4 md:mr-0">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="navClose"
+                class="text-3xl hidden text-secondary ease-in-out duration-500 delay-300 mr-4 md:mr-0">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="navMenu"
+                class="md:flex items-center bg-white border-t text-primary md:border-t gap-8 font-semibold absolute  md:relative w-full md:w-fit text-black px-4 md:px-0 2xl:text-xl top-full h-0 md:h-fit overflow-hidden invisible md:overflow-visible md:visible z-50">
+                <li class="text-xl py-4 md:py-8"><a href="/">Home</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./about.html">About</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./products.html">Products</a></li>
+                <li class="text-xl py-4 md:py-8"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <button
+                    class="text-white font-medium bg-primary px-6 py-3 rounded hover:bg-secondary ease-in-out duration-500">Get
+                    Started</button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end  -->
+
+    <!-- our products -->
+    <div class="container mx-auto my-20">
+        <div class="mx-4 md:mx-0">
+            <h1 class="text-center text-primary text-6xl font-semibold">Our Products</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 xl:grid-cols-5 gap-5 mt-20">
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/minikit.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">মিনিকেট চাল </br> Miniket Rice</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/mini-pre.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">মিনিকেট চাল প্রিমিয়াম </br> Miniket Rice Premium</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/najirshail.jfif" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">নাজিরশাইল চাল </br> Najirshaile Rice</h1>
+                </div>
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/br28.png" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">বি আর-২৮ চাল</br> BR28 Rice</h1>
+                </div>
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/br29.png" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">বি আর-২৯ চাল</br> BR29 Rice</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/lentils.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">মুসুর ডাল<br> Lentils</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/review2.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">চিনি </br>Sugar</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/mustard-oil.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">সরিষার তেল </br>Mustard Oil</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/soyabin.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">সয়াবিন তেল </br>Soyabean Oil</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/palm-oil.avif" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">পাম ওয়েল </br>Palm Oil</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/flour.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">আটা</br>Flour</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/product1.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">আলু</br>Potato</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/onion.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">পেয়াজ</br>Onion</h1>
+                </div>
+                
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/garlic.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">রসুন</br>Garlic</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/ginger.avif" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">আদা</br>Ginger</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/caradom.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">এলাচ</br>Cardamom</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/cumin.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">জিরা</br>Cumin</h1>
+                </div>
+                
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/turmaric.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">হলুদ</br>Turmaric</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/chili.jfif" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">মরিচ</br>chili</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/cinnamon.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">দারুচিনি</br>Cinnamon</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/cloves.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">লবঙ্গ</br>Cloves</h1>
+                </div>
+                
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/wheat.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">গম</br>Wheat</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/corn.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">ভুট্টা</br>Corn</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/gallery4.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">ছোলা </br>Chickpeas</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/salt.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">লবণ </br>Salt</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/air-condition.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">এসি </br>Air conditioner</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/tv.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">টেলিভিশন এলইডি </br>LED TV</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/rice-cooker.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">রাইস কুকার </br> Rice Cooker</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/fan.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">ফ্যান </br>Fan</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/cable.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">ইলেক্ট্রিক্যাল ক্যাবল </br>Electrical Cable</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/monitor.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">মনিটর  </br>Monitor</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/micro-wave.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">মাইক্রোওয়েভ ওভেন  </br>Micro wave Oven</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/dinner-set.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">ডিনার সেট  </br>Dinner set</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/gas-atove.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">গ্যাসের চুলা </br>Gas Stove</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/a4-paper.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">এ৪ কাগজ </br>A4 Paper</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/gi-pipe.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">জি আই পাইপ</br>GI Pipe</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/gp-sheet.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">জিপি শিট</br>GP Sheet</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/rod.jpeg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">রড </br>Rod</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/cement.jfif" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">সিমেন্ট </br>Cement</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/stone.jfif" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">পাথর </br>Stone </h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/savlon.jfif" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">এসি আই স্যাভ্লণ </br>ACI Savlon </h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/shrimp-fish.jpeg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">চিংড়ি মাছ</br>Shrimp Fish </h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/hilsha.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">ইলিশ মাছ</br>Hilsha Fish  </h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/roi.webp" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">রুই/কাতলা মাছ</br>Rui/cuttle Fish</h1>
+                </div>
+                
+                <div class="border border-secondary rounded-xl">
+                    <img class="rounded-t-xl w-full h-52" src="./assets/image/shukti.jpg" alt="product">
+                    <h1 class="bg-primary rounded-b-xl text-center text-white py-5 text-sm">সুটকি মাছ</br>sutki Fish</h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- our products  -->
+
+    <!-- footer section start  -->
+    <div class='footer-bg bg-primary'>
+        <div class='container mx-auto'>
+            <div class='grid grid-cols-1 md:grid-cols-3 gap-10 py-12 mx-5 md:mx-0'>
+                <div class='flex md:block flex-col justify-center items-center'>
+                    <span class='uppercase text-white flex items-center font-[500] gap-2'>
+                        <a href="/">
+                            <h1 class="text-4xl md:text-5xl font-semibold uppercase text-secondary">Utshob</h1>
+                            <p
+                                class="md:text-lg font-medium text-white uppercase tracking-[8px] md:tracking-[11px] text-center">
+                                Trading</p>
+                        </a>
+                    </span>
+                    <p class='text-white my-5 text-center md:text-start'>Presently, the company efficiently conveys and
+                        disseminates food products across the entire Kingdom market utilizing an extensive fleet of
+                        well-equipped vehicles and a proficient sales team. </p>
+
+                    <span class="flex text-white items-center gap-4 mt-2">
+                        <i class="fa-regular fa-envelope-open"></i>
+                        <p>utshobtradingcontact@gmail.com</p>
+                    </span>
+                    <span class="flex text-white items-center gap-4 mt-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>01824-554733</p>
+                    </span>
+                    <span class="flex text-white items-center gap-4 mt-2 mb-8">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>02-48956074 (Office)</p>
+                    </span>
+                </div>
+
+                <div class='md:flex justify-between text-center md:text-start'>
+                    <div class='w-full md:w-1/2'>
+                        <h2 class='text-white text-xl font-medium'>Useful links</h2>
+                        <ul class='text-white mt-5'>
+                            <li><a class='hover:text-secondary' href=''>About</a></li>
+                            <li><a class='hover:text-secondary' href='./products.html'>Products</a></li>
+                            <li><a class='hover:text-secondary' href='./contact.html'>Contact</a></li>
+                            <li><a class='hover:text-secondary' href=''>Our Clients</a></li>
+                        </ul>
+                    </div>
+                    <div class='w-full md:w-1/2 mt-5 md:mt-0'>
+                        <h2 class='text-white text-xl font-medium'>Social</h2>
+                        <ul class='text-white mt-5'>
+                            <li><a class='hover:text-secondary' href=''>Facebook</a></li>
+                            <li><a class='hover:text-secondary' href=''>Instagram</a></li>
+                            <li><a class='hover:text-secondary' href=''>Twitter</a></li>
+                            <li><a class='hover:text-secondary' href=''>Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class='text-white text-xl font-medium text-center md:text-start'>Subscribe Our Newsletter</h2>
+
+                    <div class="flex items-center gap-2 mt-5">
+                        <input class="border-none outline-none w-full rounded-md p-2.5 placeholder:text-sm" type="text"
+                            placeholder="Enter your email">
+                        <button
+                            class="px-6 py-3 rounded-md text-white bg-secondary uppercase font-medium text-sm hover:bg-primary border border-primary hover:border-secondary ease-in duration-500">Subscribe</button>
+                    </div>
+
+                    <div class="mt-5">
+                        <span class="text-white flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <p>Flat # 5D, House # 06 (Naam Bhaban) Road #02, Banani, Dhaka-1213</p>
+                        </span>
+                    </div>
+                    <span class='flex items-center gap-2 mt-8'>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-facebook-f text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#3c599f] border-none"></i>
+                        </a>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-twitter text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#32CCFE] border-none"></i>
+                        </a>
+                        <a href=''>
+                            <i
+                                class="fa-brands fa-linkedin-in text-white h-10 w-10 text-2xl rounded-full flex items-center justify-center bg-[#0085AE] border-none"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class='py-5 border-t border-t-white md:flex items-center justify-between'>
+                <p id="copyright" class='text-white text-center text-sm'></p>
+                <p class='text-white text-sm text-center md:text-end'>Developed By: <a class="fw-semi-bold" href="https://www.facebook.com/talha.rejuanrafi">musfiq611891</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end  -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
