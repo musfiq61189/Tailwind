@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="w-full max-w-lg p-6">
+    <!-- Header Section -->
+    <div class="flex justify-between items-center bg-white rounded-t-lg p-4 shadow-md">
+      <div class="flex items-center">
+        <!-- Logo -->
+        <img src="./images/v987-18a-removebg-preview.png" alt="Logo" class="h-10 w-10 mr-2" />
+        <p class="text-xl font-medium text-[#46C8BB]">ZAMS Hopsital</p>
+      </div>
+      <!-- Language Button -->
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">English</button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="bg-white shadow-lg p-8 rounded-b-lg">
+      <h2 class="text-2xl font-semibold text-center mb-6">Sign In</h2>
+      <form action="#" method="post" class="space-y-4">
+        <!-- Email Field -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email: <span class="text-red-500">*</span></label>
+          <input type="email" id="email" name="email" required class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Email">
+        </div>
+        <!-- Password Field -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password: <span class="text-red-500">*</span></label>
+          <div class="flex items-center">
+            <input type="password" id="password" name="password" required class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Password">
+            <a href="#" class="text-blue-500 text-sm ml-2">Forgot Password?</a>
+          </div>
+        </div>
+        <!-- Remember Me Checkbox -->
+        <div class="flex items-center">
+          <input type="checkbox" id="remember" name="remember" class="mr-2">
+          <label for="remember" class="text-sm text-gray-600">Remember Me</label>
+        </div>
+        <!-- Login Button -->
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg font-semibold hover:bg-blue-600"><a href="">Login</a></button>
+      </form>
+      <!-- Create Account Link -->
+      <p class="text-center text-sm mt-4">New Here? <a href="#" class="text-blue-500">Create an Account</a></p>
+    </div>
+
+    <!-- Role Selection Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 py-6">
+        <div class="pb-2 lg:pr-1"> 
+            <button class="bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-600" style="height: 50px; width: 150px;"><a href="./Super admin Dashboard.html">Super Admin</a></button>
+        </div>
+    
+      <div class="pb-2 lg:pl-1"><button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" style="height: 50px; width: 150px;">Doctor</button></div>
+      <div class="pb-2 lg:pl-[8px]"> <button class="bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600" style="height: 50px; width: 150px;" >Accountant</button></div>
+      <div class="pb-2 lg:pr-1">
+        <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600" style="height: 50px; width: 150px;">Case Handler</button>
+      </div>
+      <div class="pb-2 lg:pl-1">
+        <button class="bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-600" style="height: 50px; width: 150px;">Receptionist</button>
+      </div>
+      <div class="pb-2 lg:pl-[8px]">
+        <button class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600" style="height: 50px; width: 150px;">Pharmacist</button>
+      </div>
+      <div class="pb-2 lg:pr-1">
+        <button class="bg-yellow-700 text-white py-2 px-4 rounded-lg hover:bg-yellow-800" style="height: 50px; width: 150px;">Lab Technician</button>
+      </div >
+      <div class="pb-2 lg:pl-1">
+        <button class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700" style="height: 50px; width: 150px;">Nurse</button>
+      </div>
+      <div class="pb-2 lg:pl-[8px]">
+        <button class="bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-gray-800" style="height: 50px; width: 150px;"><a href="./Dashboard.html">Patient</a></button>
+      </div>
+      <div class="pb-2 lg:pr-1">
+        <button class="bg-blue-400 text-white py-2 px-4 rounded-lg hover:bg-blue-500" style="height: 50px; width: 150px;">Front Site</button>
+      </div>
+      
+      
+      
+      
+      
+      
+    </div>
+
+
+
+
+
+    
+  </div>
+
+
+
+  
+</body>
+</html>

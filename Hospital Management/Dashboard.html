@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+   
+        function Open(){
+           document.querySelector('.sidebar').classList.toggle('left-[80px]');
+        }
+      </script>
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body class="bg-gray-100">
+    <span class="absolute text-white text-4xl top-5 left-4 cursor-pointer" onclick="Open()">
+        <i class="bi bi-filter-left px-2 bg-gray-900 rounded-md"></i>
+
+    </span>
+
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] bg-white  p-2 w-[300px] overflow-y-auto
+    bg-gray-900 shadow">
+    <div class="text-black text-xl"></div>
+    <div class="p-2.5 mt-1 flex items-center">
+            <img src="./images/v987-18a-removebg-preview.png" alt="" style="height: 50px;">
+            <h1 class=" font-bold text-[#46C8BB] text-[20px] ml-3"> ZAMS Hospital</h1>
+            <i class="bi bi-x ml-20 cursor-pointer lg:hidden text-black" onclick="Open()"></i>
+         </div>
+
+         <div class="p-2.5 mt-3 flex-items-center rounded-md px-2 duration-300
+         cursor-pointer bg-gray-200 text-white">
+         <i class="bi bi-search text-sm text-black"></i> 
+         <input type="text" placeholder="search" class="text-[15px ] ml-4 w-auto bg-transparent">
+    </div>
+
+    <div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+       <a href="#" class="flex items-center space-x-2 p-2 text-blue-600 font-semibold hover:text-[#46C8BB]">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path d="M4 3a2 2 0 00-2 2v1h16V5a2 2 0 00-2-2H4zM18 7H2v7a2 2 0 002 2h12a2 2 0 002-2V7zM8 12a1 1 0 112 0 1 1 0 01-2 0z"/></svg>
+          <span class="text-xl">Dashboard</span>
+        </a>
+   </div>
+
+   <div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="./Appointments.html" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+            <svg class="w-8 h-8" fill="currentColor"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg>  
+             <span class="text-xl">Appointments</span>
+</div>
+<div class="p-2.4flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="./Bills.html" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 64zm64 320l-64 0 0-64c35.3 0 64 28.7 64 64zM64 192l0-64 64 0c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64l0 64-64 0zm64-192c-35.3 0-64-28.7-64-64l64 0 0 64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+        <span class="text-xl">Bills</span>
+</div>
+
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="./Documents.html" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 288c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128z"/></svg>
+        <span class="text-xl">Documents</span></a>
+</div>
+
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="./Notice board.html" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg>
+        <span class="text-xl">Notice Boards</span></a>
+</div>
+
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="./IPD.html" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 416c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l128 0c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8l160 0c35.3 0 64 28.7 64 64l0 256zM232 376c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64 64 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-64 0 0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 64-64 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l64 0 0 64z"/></svg>
+        <span class="text-xl">IPD-Patients IN</span></a>
+</div>
+
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm88 200l144 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-144 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg>
+        <span class="text-xl">OPD-Patients OUT</span></a>
+</div>
+
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM80 64l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L80 96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm16 96l192 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32L96 352c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32zm0 32l0 64 192 0 0-64L96 256zM240 416l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+        <span class="text-xl">Invoices</span></a>
+</div>
+
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg>
+        <span class="text-xl">Live Consultations</span></a>
+</div>
+
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0zM432 224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm16 80c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 48-48 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 0 48c0 8.8 7.2 16 16 16s16-7.2 16-16l0-48 48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0 0-48z"/></svg>
+        <span class="text-xl">Patients Cases</span></a>
+</div>
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z"/></svg>
+        <span class="text-xl">Patient Admissions</span></a>
+</div>
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M32 0C14.3 0 0 14.3 0 32L0 192l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 50.7 0 128 128L137.4 457.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L288 397.3 393.4 502.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L333.3 352 438.6 246.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 306.7l-85.8-85.8C251.4 209.1 288 164.8 288 112C288 50.1 237.9 0 176 0L32 0zM176 160L64 160l0-96 112 0c26.5 0 48 21.5 48 48s-21.5 48-48 48z"/></svg>
+        <span class="text-xl">Prescriptions</span></a>
+</div>
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M441 7l32 32 32 32c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-15-15L417.9 128l55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-72-72L295 73c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l55 55L422.1 56 407 41c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0zM210.3 155.7l61.1-61.1c.3 .3 .6 .7 1 1l16 16 56 56 56 56 16 16c.3 .3 .6 .6 1 1l-191 191c-10.5 10.5-24.7 16.4-39.6 16.4l-88.8 0L41 505c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l57-57 0-88.8c0-14.9 5.9-29.1 16.4-39.6l43.3-43.3 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57 41.4-41.4 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57z"/></svg>
+        <span class="text-xl">Vaccinated Patients</span></a>
+</div>
+<div class="p-2.5 mt-3 flex-items-center rounded-md px-4 duration-300 cursor-pointer ">
+    <a href="#" class="flex items-center space-x-2 p-2 text-gray-600 hover:text-blue-600">
+        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 38.6C310.1 219.5 256 287.4 256 368c0 59.1 29.1 111.3 73.7 143.3c-3.2 .5-6.4 .7-9.7 .7L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zm48 96a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm16 80c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 48-48 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 0 48c0 8.8 7.2 16 16 16s16-7.2 16-16l0-48 48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0 0-48z"/></svg>
+        <span class="text-xl">Reports</span></a>
+</div>
+
+    
+</div>
+
+<!-- Main Content Area -->
+<div class="flex-1 lg:pl-[300px]">
+    <!-- Top Navbar -->
+    <div class="flex items-center justify-between bg-white shadow-md p-4">
+      <h1 class="text-2xl font-semibold px-16 lg:pl-[300px]">Dashboard</h1>
+      <div class="flex items-center space-x-4">
+        <!-- Notification & User Profile -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-9"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#B197FC" d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>       
+         <div class="w-14 h-14 rounded-full bg-purple-500 flex items-center justify-center text-white">TS</div>
+      </div>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 ">
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="text-purple-500 text-3xl">132</div>
+        <div class="text-gray-700">Total Appointments</div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="text-purple-500 text-3xl">0</div>
+        <div class="text-gray-700">Today Appointment</div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="text-purple-500 text-3xl">160.07K</div>
+        <div class="text-gray-700">Bill Amount</div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="text-purple-500 text-3xl">0</div>
+        <div class="text-gray-700">Total Meetings</div>
+      </div>
+    </div>
+
+    <!-- Recent Appointments Table -->
+    <div class="bg-white shadow-lg rounded-lg p-4 mx-4 mb-4">
+      <h2 class="text-lg font-semibold mb-4">Recent Appointments</h2>
+      <div class="overflow-auto">
+        <table class="w-full text-left">
+          <thead>
+            <tr>
+              <th class="py-2 px-4 border-b">Patient</th>
+              <th class="py-2 px-4 border-b">Doctor</th>
+              <th class="py-2 px-4 border-b">Doctor Department</th>
+              <th class="py-2 px-4 border-b">Date</th>
+              <th class="py-2 px-4 border-b">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 px-4 border-b flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center text-white">TS</div>
+                <div>
+                  <p class="font-semibold">Tirth Shah</p>
+                  <p class="text-gray-500 text-sm">tirth@gmail.com</p>
+                </div>
+              </td>
+              <td class="py-2 px-4 border-b">
+                <p class="font-semibold">Khalid Al habsi</p>
+                <p class="text-gray-500 text-sm">naruto3o5@hotmail.com</p>
+              </td>
+              <td class="py-2 px-4 border-b text-blue-500">Allergists</td>
+              <td class="py-2 px-4 border-b">
+                <p class="text-blue-500">10:00 AM</p>
+                <p class="text-gray-500 text-sm">12th Nov, 2024</p>
+              </td>
+              <td class="py-2 px-4 border-b">
+                <span class="bg-green-200 text-green-700 px-2 py-1 rounded-full text-sm">Confirmed</span>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- div class="mt-8 border-t border-blue-800 pt-2 flex justify-between">
+            <p class="text-sm lg:pl-[320px] pt">© Copyright by <a href="" class="font-bold">ZAMS Hospital</a>
+                <p class="text-sm text-right pr-10">© Design by <a href="https://www.instagram.com/musfiq611891/" class="font-bold">Musfiq611891</a>
+        </div!-->
+    </footer>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-lg">
+            <div class="p-6">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo" class="h-8">
+                    <h1 class="text-xl font-bold text-blue-600">HMS</h1>
+                </div>
+                <nav class="mt-6 space-y-4">
+                    <a href="#" class="block text-gray-800 p-2 rounded-lg hover:bg-blue-100">Dashboard</a>
+                    <a href="#" class="block text-gray-600 p-2 rounded-lg hover:bg-blue-100">Patient Smart Cards</a>
+                    <a href="#" class="block text-gray-600 p-2 rounded-lg hover:bg-blue-100">Users</a>
+                    <!-- Add additional sidebar items as needed -->
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8 space-y-6">
+            <!-- Header -->
+            <header class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-semibold text-gray-800">Dashboard</h2>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-blue-100 p-2 rounded-full">
+                        <i class="text-blue-600 fas fa-bell"></i>
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gray-700">Infy HMS</span>
+                        <img src="user-avatar.png" alt="User" class="h-10 w-10 rounded-full">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Statistics Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-800">23.25M</h3>
+                    <p class="text-gray-600">Invoice Amount</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-800">43.79M</h3>
+                    <p class="text-gray-600">Bill Amount</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-800">55.15M</h3>
+                    <p class="text-gray-600">Payment Amount</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-800">3.46M</h3>
+                    <p class="text-gray-600">Advance Payment Amount</p>
+                </div>
+                <!-- Add more statistic cards as needed -->
+            </div>
+
+            <!-- Chart Section -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h4 class="text-lg font-semibold text-gray-800 mb-4">Yearly Income Expense Chart (2024)</h4>
+                <div class="h-64 bg-gray-100 rounded-lg">
+                    <!-- Chart placeholder (use a chart library like Chart.js for the actual chart) -->
+                </div>
+            </div>
+
+            <!-- Notice Board, Enquiries, Appointments -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Notice Board -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h5 class="text-lg font-semibold text-gray-800">Notice Board</h5>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li>qwerty</li>
+                        <li>TBPH Meeting</li>
+                        <li>cas</li>
+                        <li>we need it now</li>
+                    </ul>
+                </div>
+
+                <!-- Enquiries -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h5 class="text-lg font-semibold text-gray-800">Enquiries</h5>
+                    <p class="text-gray-600 mt-4">No Enquiries Yet</p>
+                </div>
+
+                <!-- Appointments -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h5 class="text-lg font-semibold text-gray-800">Appointments</h5>
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between text-gray-600">
+                            <span>Naem Riaz</span>
+                            <span>Dr. Dhaya Test</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Abdulfuzli J</span>
+                            <span>Dr. Lalan Thatikonda</span>
+                        </div>
+                        <!-- Add more appointment entries as needed -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

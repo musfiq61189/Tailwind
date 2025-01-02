@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-4 py-2 md:px-8">
+    <div class="container mx-auto flex items-center justify-between">
+      
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="./images/v987-18a-removebg-preview.png" alt="Logo" class="h-8 w-8 mr-2">
+        <p class="text-xl font-medium text-[#46C8BB]">ZAMS Hopsital</p>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-500 hover:text-orange-500">Home</a>
+        <a href="#" class="text-gray-500 hover:text-orange-500">Services</a>
+        <a href="#" class="text-gray-500 hover:text-orange-500">Doctors</a>
+        <a href="#" class="text-gray-500 hover:text-orange-500">About</a>
+        <a href="#" class="text-gray-500 hover:text-orange-500">Contact</a>
+        
+        <!-- Dropdown for Features -->
+        <div class="relative group">
+          <button class="text-gray-500 hover:text-orange-500 flex items-center">
+            Our Features
+          </button>
+        </div>
+
+        <a href="#" class="text-gray-500 hover:text-orange-500">English</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex space-x-4 items-center">
+        <a href="./Log In.html" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">Login</a>
+        <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-400">Book Appointment</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-gray-500 focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden mt-2 hidden space-y-2">
+      <a href="#" class="block text-gray-500 hover:text-orange-500">Home</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">Services</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">Doctors</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">About</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">Contact</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">Our Features</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">English</a>
+    </div>
+  </nav>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    document.getElementById("mobile-menu-button").onclick = function() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    };
+  </script>
+
+
+<!-- Main Section -->
+<section class=" mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center bg-gray-200 rounded shadow mt-4 mb-6">
+    <!-- Text Section -->
+    <div class="md:w-1/2 space-y-4">
+      
+      <h1 class="text-4xl md:text-5xl font-bold text-black leading-tight">
+        Make Appointment
+      </h1>
+      <p class="text-orange-500 font-medium">Home/ <span class="text-gray-500 text-lg"> MakeAppointment</span></p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+      <img src="./images/medical-checkup.png" alt="Hospital Management Illustration" class="w-full h-auto max-w-md">
+    </div>
+  </section>
+
+ 
+  <!-- Appointment Form Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-4 md:px-8">
+      <h2 class="text-3xl font-bold text-blue-800 text-center mb-6">Make an Appointment</h2>
+      <div class="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+        <form>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-gray-700">First Name *</label>
+              <input type="text" placeholder="Enter your First Name" class="w-full p-2 border rounded-md">
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Last Name *</label>
+              <input type="text" placeholder="Enter your Last Name" class="w-full p-2 border rounded-md">
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Email *</label>
+              <input type="email" placeholder="Enter your email" class="w-full p-2 border rounded-md">
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Password *</label>
+              <input type="password" placeholder="Enter your Password" class="w-full p-2 border rounded-md">
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Confirm Password *</label>
+              <input type="password" placeholder="Enter Confirm Password" class="w-full p-2 border rounded-md">
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Gender *</label>
+              <div class="flex items-center space-x-4">
+                <label class="flex items-center">
+                  <input type="radio" name="gender" value="Male" class="mr-2"> Male
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="gender" value="Female" class="mr-2"> Female
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Doctor Department</label>
+              <select class="w-full p-2 border rounded-md">
+                <option>Select Department</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Doctor</label>
+              <select class="w-full p-2 border rounded-md">
+                <option>Select Doctor</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700">Date *</label>
+              <input type="date" class="w-full p-2 border rounded-md">
+            </div>
+          </div>
+          <div class="mt-4">
+            <label class="block font-semibold text-gray-700">Description</label>
+            <textarea placeholder="Enter Description" class="w-full p-2 border rounded-md"></textarea>
+          </div>
+          <div class="mt-6 text-center">
+            <button type="submit" class="px-6 py-2 bg-orange-500 text-white font-semibold rounded-lg">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+        
+
+  
+
+
+<!-- Footer Section -->
+<footer class="bg-blue-900 text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Company Info -->
+      <div class="flex items-start">
+        <img src="./images/v987-18a-removebg-preview.png" alt="Logo" class="mr-4 h-20 w-20">
+        <p class="text-sm">
+          Over past 10+ years of experience and skills in various technologies, we built great scalable products.
+        </p>
+      </div>
+      
+      <!-- Useful Links -->
+      <div>
+        <h3 class="text-orange-500 font-semibold mb-4">Useful Link</h3>
+        <ul class="space-y-2">
+          <li><a href="./Home.html" class="text-white hover:text-orange-500">Home</a></li>
+          <li><a href="#" class="text-white hover:text-orange-500">Services</a></li>
+          <li><a href="#" class="text-white hover:text-orange-500">Doctors</a></li>
+          <li><a href="#" class="text-white hover:text-orange-500">About</a></li>
+          <li><a href="#" class="text-white hover:text-orange-500">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Information -->
+      <div>
+        <h3 class="text-lg font-semibold">Contact Information</h3>
+        <ul class="mt-2 space-y-2 text-sm">
+          <li>📞 +917096336561</li>
+          <li>⏰ 08:00 AM to 21:00 PM</li>
+          <li>📍 C/303, Atlanta Shopping Mall, Surat, Gujarat 394101</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <!--div class="mt-8 border-t border-blue-800 pt-2 flex justify-between">
+        <p class="text-sm pl-10 pt">© Copyright by <a href="" class="font-bold">ZAMS Hospital</a>
+            <p class="text-sm text-right pr-10">© Design by <a href="https://www.instagram.com/musfiq611891/" class="font-bold">Musfiq611891</a>
+    </div!-->
+  </footer>
+
+
+
+
+
+
+</body>
+</html>
