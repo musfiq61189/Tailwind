@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Pacific Gym</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Top Contact Info -->
+  <div class="bg-gray-200 text-center py-2 text-sm">
+    <p>Contact us directly at +225134082 (local time : 03:56)</p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold">Grand Pacific</h1>
+      <ul class="flex space-x-4 text-gray-700">
+        <li><a href="#" class="hover:text-gray-900">Home</a></li>
+        <li><a href="#" class="hover:text-gray-900">Pages</a></li>
+        <li><a href="#" class="hover:text-gray-900">Our Rooms</a></li>
+        <li><a href="#" class="hover:text-gray-900">Meetings</a></li>
+        <li><a href="#" class="hover:text-gray-900">Reservation</a></li>
+        <li><a href="#" class="hover:text-gray-900">Dining</a></li>
+        <li><a href="#" class="text-green-500 font-semibold">Gym</a></li>
+        <li><a href="#" class="hover:text-gray-900">Special Offers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto p-6">
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Sidebar -->
+      <div class="bg-red-600 text-white rounded-lg p-4">
+        <h2 class="text-lg font-bold">GP GYM</h2>
+        <ul class="space-y-2 mt-4">
+          <li><a href="#" class="block bg-red-700 px-4 py-2 rounded-md">Gym Management Log in</a></li>
+          <li><a href="#" class="block bg-red-700 px-4 py-2 rounded-md">Member Registration or Login</a></li>
+          <li><a href="#" class="block bg-red-700 px-4 py-2 rounded-md">Member List</a></li>
+          <li><a href="#" class="block bg-red-700 px-4 py-2 rounded-md">Class Booking</a></li>
+        </ul>
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-span-2 bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-bold text-center text-red-600">Grand Pacific GYM</h2>
+        <form class="mt-6">
+          <!-- Personal Information Section -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold">Personal Information (Required Section)</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Member Id" class="border rounded-lg p-2 w-full" required>
+              <input type="text" placeholder="First Name" class="border rounded-lg p-2 w-full" required>
+              <input type="text" placeholder="Middle Name" class="border rounded-lg p-2 w-full">
+              <input type="text" placeholder="Last Name" class="border rounded-lg p-2 w-full" required>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-center space-x-4">
+                <label class="font-semibold">Gender:</label>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+              </div>
+              <input type="date" class="border rounded-lg p-2 w-full" required>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <input type="email" placeholder="Email" class="border rounded-lg p-2 w-full" required>
+              <input type="password" placeholder="Password" class="border rounded-lg p-2 w-full" required>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Phone Code" class="border rounded-lg p-2 w-full" required>
+              <input type="text" placeholder="Phone Number" class="border rounded-lg p-2 w-full" required>
+            </div>
+          </div>
+
+          <!-- Additional Sections (Collapsible) -->
+          <div class="space-y-4 mt-6">
+            <h3 class="text-xl font-semibold">Membership Information (Required Section)</h3>
+            <div class="border rounded-lg p-4"> <!-- Replace with actual inputs as needed --> </div>
+            
+            <h3 class="text-xl font-semibold">Contact Information</h3>
+            <div class="border rounded-lg p-4"> <!-- Replace with actual inputs as needed --> </div>
+            
+            <h3 class="text-xl font-semibold">Physical Information</h3>
+            <div class="border rounded-lg p-4"> <!-- Replace with actual inputs as needed --> </div>
+            
+            <h3 class="text-xl font-semibold">More Information</h3>
+            <div class="border rounded-lg p-4"> <!-- Replace with actual inputs as needed --> </div>
+          </div>
+
+          <button type="submit" class="w-full mt-6 bg-red-600 text-white rounded-lg p-2 font-semibold">Registration</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white mt-8">
+    <div class="container mx-auto p-6 grid md:grid-cols-3 gap-4 text-center">
+      <!-- Phone Section -->
+      <div>
+        <h3 class="font-semibold">Phone</h3>
+        <p>+880 95868566, +880 95635638</p>
+        <p>+880 1585855633, +880 1474585555</p>
+      </div>
+
+      <!-- Email Section -->
+      <div>
+        <h3 class="font-semibold">Email</h3>
+        <p>info@grandhotel.com</p>
+        <p>reservation@grandhotel.com</p>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex justify-center space-x-4">
+        <a href="#" class="text-white">Facebook</a>
+        <a href="#" class="text-white">Instagram</a>
+        <a href="#" class="text-white">YouTube</a>
+      </div>
+    </div>
+    <div class="container mx-auto text-center py-4">
+      <div class="grid md:grid-cols-3 gap-4">
+        <div>
+          <h3 class="font-semibold">Hotel Address</h3>
+          <p>Marine Drive Road, Cox's Bazar Bangladesh</p>
+          <p>+880 95868566, +880 95635638</p>
+          <p>+880 1585855633, +880 1474585555</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Dhaka Hotel Address</h3>
+          <p>Marine Drive Road, Cox's Bazar Bangladesh</p>
+          <p>+880 95868566, +880 95635638</p>
+          <p>+880 1585855633, +880 1474585555</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Chittagong Hotel Address</h3>
+          <p>Marine Drive Road, Cox's Bazar Bangladesh</p>
+          <p>+880 95868566, +880 95635638</p>
+          <p>+880 1585855633, +880 1474585555</p>
+        </div>
+      </div>
+      <p class="mt-4">&copy; Copyright by Grand Pacific</p>
+      <p class="text-sm">Design by Bengal Software</p>
+    </div>
+  </footer>
+
+</body>
+</html>
