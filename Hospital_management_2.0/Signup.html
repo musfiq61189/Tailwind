@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white w-full max-w-lg p-8 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold text-center mb-4">Let's Get Started</h1>
+    <p class="text-gray-600 text-center mb-6">Add Your Personal Details to Continue</p>
+
+    <form>
+      <!-- Name Inputs -->
+      <div class="mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name:</label>
+          <input
+            type="text"
+            id="last-name"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-medium mb-2">Email:</label>
+        <input
+          type="text"
+          id="email"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <!-- Passsword -->
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700 font-medium mb-2">Password:</label>
+        <input
+          type="text"
+          id="password"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="mb-6">
+        <label for="dob" class="block text-gray-700 font-medium mb-2">Confirm Password:</label>
+        <input
+          type="text"
+          id="confirm password"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between">
+        <button
+          type="reset"
+          class="w-1/2 mr-2 bg-gray-200 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-300 transition font-semibold"
+        >
+          Reset
+        </button>
+        <button
+          type="submit"
+          class="w-1/2 ml-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition font-semibold"
+        >
+          Next
+        </button>
+      </div>
+    </form>
+
+    <!-- Login Link -->
+    <p class="text-gray-600 text-center mt-6">
+      Already have an account? 
+      <a href="./login.html" class="text-blue-500 font-medium hover:underline">Login</a>
+    </p>
+  </div>
+</body>
+</html>

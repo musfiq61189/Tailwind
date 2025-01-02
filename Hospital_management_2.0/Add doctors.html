@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Main Container -->
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-lg">
+      <div class="p-4">
+        <!-- User Info -->
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-12 w-12 bg-gray-300 rounded-full"></div>
+          <div>
+            <h2 class="text-lg font-medium">Administrator</h2>
+            <p class="text-sm text-gray-500">admin@edoc.com</p>
+          </div>
+        </div>
+        <!-- Logout Button -->
+        <button class="mt-8 w-full px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded">
+          Log out
+        </button>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="space-y-4 pt-4">
+            <li>
+              <a href="./admin Dashboard.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2 ">
+                <span class="ml-3">🏠 Dashboard</span> 
+              </a>
+            </li>
+            <li>
+              <a href="./Add doctors.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2 bg-blue-200">
+                <span class="ml-3">📅 Doctors</span> 
+              </a>
+            </li>
+            <li>
+              <a href="./Admin schedule.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+                <span class="ml-3">🗂️ Schedule</span> 
+              </a>
+            </li>
+            <li>
+              <a href="./Admin Appointment.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+                <span class="ml-3">👨‍⚕️ Appointment</span> 
+              </a>
+            </li>
+            <li>
+              <a href="./billing.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+                <span class="ml-3">💳 Billing</span> 
+              </a>
+            </li>
+            <li>
+              <a href="./inventory.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+                <span class="ml-3">📦 Inventory</span> 
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+                <span class="ml-3">⚙️ Settings</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        
+      </div>
+    </aside>
+ <!-- Main Content -->
+ <main class="flex-1 bg-gray-100 p-6">
+  <header class="flex justify-between items-center mb-6">
+    <button class="flex items-center bg-blue-100 text-blue-600 px-4 py-2 rounded-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Back
+      </button>
+      <div class="flex items-center space-x-2">
+        <p  class="text-xl font-semibold">Doctors</p>
+      </div>
+    <div class="flex items-center space-x-4">
+      
+      <p class="text-gray-500">Today's Date: <span class="font-semibold">2024-02-28</span></p>
+    </div>
+  </header>
+
+  <section class="bg-white rounded-md shadow-md p-6">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold">Add New Doctor</h2>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">+ Add New</button>
+    </div>
+    <table class="w-full border-collapse border border-gray-300">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 px-4 py-2 text-left">Doctor Name</th>
+          <th class="border border-gray-300 px-4 py-2 text-left">Email</th>
+          <th class="border border-gray-300 px-4 py-2 text-left">Specialties</th>
+          <th class="border border-gray-300 px-4 py-2 text-left">Events</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">Test Doctor</td>
+          <td class="border border-gray-300 px-4 py-2">doctor@edoc.com</td>
+          <td class="border border-gray-300 px-4 py-2">Accident and Emergency</td>
+          <td class="border border-gray-300 px-4 py-2">
+            <button class="text-blue-500 hover:underline">Edit</button>
+            <button class="text-blue-500 hover:underline ml-2">View</button>
+            <button class="text-red-500 hover:underline ml-2">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+</div>
+    
+
+</body>
+</html>

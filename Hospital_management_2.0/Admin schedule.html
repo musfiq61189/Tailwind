@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Schedule </title>
+</head>
+<body class="bg-gray-100 h-screen">
+
+  <div class="flex h-full">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-md h-full">
+      <div class="p-4">
+        <div class="text-center mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-300 mx-auto"></div>
+          <p class="mt-2 font-semibold">Administrator</p>
+          <p class="text-sm text-gray-500">admin@edoc.com</p>
+        </div>
+        <button class="w-full bg-blue-500 text-white py-2 rounded-md">Log out</button>
+      </div>
+      <nav>
+        <ul class="space-y-4">
+          <li>
+            <a href="./admin Dashboard.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+              <span class="material-icons ml-2">🏠 Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="./Add doctors.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+              <span class="material-icons ml-2">👨‍⚕️ Doctors</span>
+            </a>
+          </li>
+          <li>
+            <a href="./Admin schedule.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2 bg-blue-200">
+              <span class="material-icons ml-2">🗂️ Schedule</span>
+            </a>
+          </li>
+          <li>
+            <a href="./Admin Appointment.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+              <span class="material-icons ml-2">📅 Appointments</span>
+            </a>
+          </li>
+          <li>
+            <a href="./billing.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+              <span class="ml-3">💳 Billing</span> 
+            </a>
+          </li>
+          <li>
+            <a href="./inventory.html" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+              <span class="ml-3">📦 Inventory</span> 
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center text-gray-700 rounded-md hover:bg-gray-100 p-2">
+              <span class="material-icons ml-2">⚙️ settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 bg-gray-100 p-6">
+      <header class="flex justify-between items-center mb-6">
+        <button class="flex items-center bg-blue-100 text-blue-600 px-4 py-2 rounded-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+          </button>
+          <div class="flex items-center space-x-2">
+            <p  class="text-xl font-semibold">Schedule</p>
+          </div>
+        <div class="flex items-center space-x-4">
+          
+          <p class="text-gray-500">Today's Date: <span class="font-semibold">2024-02-28</span></p>
+        </div>
+      </header>
+
+      <section class="bg-white rounded-md shadow-md p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold">Schedule a Session</h2>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">+ Add a Session</button>
+        </div>
+        <div class="flex items-center space-x-4 mb-6">
+          <input type="date" class="border border-gray-300 rounded-md py-2 px-4">
+          <select class="border border-gray-300 rounded-md py-2 px-4">
+            <option value="">Choose Doctor Name from the list</option>
+            <option value="doctor1">Test Doctor</option>
+            <option value="doctor2">Another Doctor</option>
+          </select>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Filter</button>
+        </div>
+
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 px-4 py-2 text-left">Session Title</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Doctor</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Scheduled Date & Time</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Max num that can be booked</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Events</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Test Session</td>
+              <td class="border border-gray-300 px-4 py-2">Test Doctor</td>
+              <td class="border border-gray-300 px-4 py-2">2050-01-01 18:00</td>
+              <td class="border border-gray-300 px-4 py-2">50</td>
+              <td class="border border-gray-300 px-4 py-2">
+                <button class="text-blue-500 hover:underline">View</button>
+                <button class="text-red-500 hover:underline ml-2">Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1</td>
+              <td class="border border-gray-300 px-4 py-2">Test Doctor</td>
+              <td class="border border-gray-300 px-4 py-2">2022-06-24 20:36</td>
+              <td class="border border-gray-300 px-4 py-2">1</td>
+              <td class="border border-gray-300 px-4 py-2">
+                <button class="text-blue-500 hover:underline">View</button>
+                <button class="text-red-500 hover:underline ml-2">Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">12</td>
+              <td class="border border-gray-300 px-4 py-2">Test Doctor</td>
+              <td class="border border-gray-300 px-4 py-2">2022-06-10 12:32</td>
+              <td class="border border-gray-300 px-4 py-2">1</td>
+              <td class="border border-gray-300 px-4 py-2">
+                <button class="text-blue-500 hover:underline">View</button>
+                <button class="text-red-500 hover:underline ml-2">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>
